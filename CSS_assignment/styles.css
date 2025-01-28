@@ -1,0 +1,208 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: White;
+    padding: 20px;
+}
+
+
+.results-container {
+    display: flex;
+    background: white;
+    border-radius: 32px;
+    max-width: 740px;
+    width: 100%;
+    
+}
+
+
+.score-section {
+    flex: 1;
+    background: linear-gradient(to bottom, cyan, blueviolet);
+    padding: 2rem;
+    text-align: center;
+    color:black;
+    border-radius: 32px;
+}
+
+.score-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.score-circle {
+    background: linear-gradient(to bottom, violet, purple);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-number {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.score-total {
+    color: black;
+    font-size: 1.1rem;
+}
+
+.score-text {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color:white;
+}
+
+.score-description {
+    color:black;
+    font-size: 1.1rem;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+
+.summary-section {
+    flex: 1;
+    padding: 2.5rem;
+}
+
+.summary-title {
+    font-size: 1.5rem;
+    color: #303b59;
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+
+.summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.item-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.item-score {
+    color: gray;
+}
+
+.item-score span {
+    color: gray;
+    margin-left: 0.5rem;
+}
+
+
+.reaction {
+    background: plum;
+    color: purple;
+}
+
+.memory {
+    background: pink;
+    color:palevioletred;
+}
+
+.verbal {
+    background: lightgreen;
+    color: olive;
+}
+
+.visual {
+    background: lightskyblue;
+    color: Blue;
+}
+
+
+.continue-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: peru;
+    color: white;
+    border: none;
+    border-radius: 128px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.continue-btn:hover {
+    background: linear-gradient(to bottom, brown, brown);
+}
+
+
+@media (max-width: 768px) {
+    .results-container {
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .score-section {
+        border-radius: 0 0 32px 32px;
+    }
+
+    .score-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .score-number {
+        font-size: 3.5rem;
+    }
+
+    .summary-section {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+
+    .results-container {
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .summary-section {
+        padding: 1.5rem;
+    }
+
+    .score-title {
+        font-size: 1.3rem;
+    }
+
+    .score-text {
+        font-size: 1.8rem;
+    }
+}
